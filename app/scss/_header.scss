@@ -46,6 +46,7 @@
         padding: 1.625rem;
         border-radius: 5px;
         margin-top: 1.5rem;
+        z-index: 1;
 
         a {
             display: block;
@@ -94,7 +95,7 @@
     // Hamburger Open Styles
 
     &.open {
-
+        
         .header__toggle {
 
             >span:first-child {
