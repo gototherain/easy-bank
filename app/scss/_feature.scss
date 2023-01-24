@@ -11,7 +11,7 @@
 
         @include breakpoint-up(large) {
             width: 60%;
-            
+
         }
     }
 
@@ -23,7 +23,7 @@
         flex-direction: column;
 
         @include breakpoint-up(medium) {
-            flex-direction: row;            
+            flex-direction: row;
         }
     }
 
@@ -32,10 +32,12 @@
         @include breakpoint-up(medium) {
             flex: 0 0 calc(50% - 1.875rem);
         }
+
         @include breakpoint-up(large) {
             flex: 1;
         }
     }
+
 
     &__icon {
         margin-bottom: 1.875rem;
@@ -43,11 +45,10 @@
         @include breakpoint-up(large) {
             margin-bottom: 2.75rem;
         }
-        
+
     }
 
-    &__title {
-    }
+    &__title {}
 
     &__description {
         font-size: $font-sm;
