@@ -1,9 +1,7 @@
 .article {
     background-color: $veryLightGray;
 
-    &__content {
-
-    }
+    &__content {}
 
     &__grid {
         display: grid;
@@ -16,8 +14,8 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include breakpoint-up(large){
-            grid-template-columns:  repeat(4, 1fr);
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
         }
 
     }
@@ -26,10 +24,10 @@
         border-radius: 0.3125rem;
         background: $white;
         overflow: hidden;
-        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15 );
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
         transition: all 150ms ease-in-out;
 
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
 
@@ -47,7 +45,7 @@
         color: $grayishBlue;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             padding: 1.875rem 1.5625rem;
         }
 
@@ -69,5 +67,19 @@
 
     &__description {
         font-size: 0.8125rem;
+    }
+}
+
+.dark {
+    .article {
+        background-color: $darkGray;
+
+        &__item {
+            background-color: $veryDarkGray;
+        }
+
+        &__title {
+            color: $lightGrayishBlue;
+        }
     }
 }
