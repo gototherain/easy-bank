@@ -254,6 +254,12 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+.header {
+  background-color: hsl(0deg, 0%, 100%);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
@@ -372,6 +378,9 @@ a:hover {
   display: block;
 }
 
+.dark .header {
+  background-color: hsl(240deg, 4%, 9%);
+}
 .dark .header__toggle > span {
   background-color: hsl(0deg, 0%, 100%);
 }
@@ -392,6 +401,9 @@ a:hover {
 }
 .dark .header__menu a {
   color: hsl(220deg, 16%, 96%);
+}
+.dark .header .overlay {
+  background-image: linear-gradient(hsl(240deg, 4%, 9%), transparent);
 }
 
 .hero {
